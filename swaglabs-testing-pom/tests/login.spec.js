@@ -15,5 +15,5 @@ test('should log in successfully when valid data are provided', async ({ page })
   await loginPage.login(userData.validUser.username, userData.validUser.password)
 
   await expect(page.locator(assertionLocators.invetoryPageHeader)).toContainText('Swag Labs')
-  await expect(page.url()).toContain(assertionLocators.invetoryPagePath);
+  await expect(page.url()).toContain(assertionLocators.invetoryPagePath)
 });
