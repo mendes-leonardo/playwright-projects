@@ -2,13 +2,13 @@
 
 Automated end-to-end tests for [SauceDemo](https://www.saucedemo.com) (Swag Labs) using **Playwright** and the **Page Object Model (POM)** pattern.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - [Playwright](https://playwright.dev) — Test runner and browser automation
 - JavaScript (CommonJS) — Test implementation
 - Page Object Model — Design pattern for maintainable test code
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── pages/
@@ -21,18 +21,18 @@ Automated end-to-end tests for [SauceDemo](https://www.saucedemo.com) (Swag Labs
 └── package.json              # Dependencies and scripts
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - [Node.js](https://nodejs.org) (v18 or higher)
 - npm
 
-## 🔧 Installation
+## Installation
 
 ```bash
 npm install
 ```
 
-## ▶️ Running Tests
+## Running Tests
 
 Run all tests:
 
@@ -53,7 +53,7 @@ npx playwright test --reporter=html
 npx playwright show-report
 ```
 
-## 🧪 Test Coverage
+## Test Coverage
 
 | Test | Description |
 |---|---|
@@ -65,7 +65,7 @@ Valid credentials are stored in `test-data/users.json`:
 - **Username:** `standard_user`
 - **Password:** `secret_sauce`
 
-## ⚙️ Configuration
+## Configuration
 
 - **Base URL:** `https://www.saucedemo.com`
 - **Browser:** Chromium (default)
@@ -73,14 +73,10 @@ Valid credentials are stored in `test-data/users.json`:
 - **Traces:** Collected on first retry
 - **CI-ready:** Retries (2), single worker, and `test.only` prevention when `CI` environment variable is set
 
-## 📊 Reports
+## Reports
 
 Playwright generates an HTML report after each run:
 
 ```bash
 npx playwright show-report
 ```
-
-## 📄 License
-
-ISC
